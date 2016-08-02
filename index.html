@@ -20,91 +20,480 @@
 </head>
 <body>
 	<div class="wrapper">
-		<header class="top_header">
-			<div class="head_block_1 inside_block">
-				<div class="choose_country">
-					<span>Аукцион</span>
-					<a class="cur_country">Россия</a>
-					<ul class="choose_country_list hidden">
-						<li>Беларусь</li>
-						<li>Казахстан</li>
-						<li>Армения</li>
+		<div class="content">
+			<header class="top_header">
+				<div class="head_block_1 inside_block">
+					<div class="choose_country">
+						<span>Аукцион</span>
+						<a class="cur_country">Россия</a>
+						<ul class="choose_country_list hidden">
+							<li>Беларусь</li>
+							<li>Казахстан</li>
+							<li>Армения</li>
+						</ul>
+					</div>
+					<ul class="top_menu">
+						<li><a href="">Аукцион</a></li>
+						<li><a href="">Тендеры</a></li>
+						<li><a href="">Форум</a></li>
+						<li><a href="">Помощь</a></li>
+						<li><a href="">Блог</a></li>
 					</ul>
 				</div>
-				<ul class="top_menu">
-					<li><a href="">Аукцион</a></li>
-					<li><a href="">Тендеры</a></li>
-					<li><a href="">Форум</a></li>
-					<li><a href="">Помощь</a></li>
-					<li><a href="">Блог</a></li>
-				</ul>
-			</div>
-			<div class="head_block_2 inside_block">
-				<div class="main_logo">
-					<img src="img/main_logo.png" alt="">
-				</div>
-				<div class="left_menu_button"></div>
-				<div class="search_block">
-					<div class="search_cont">
-						<form action="" class="head_search_form">
-							<input type="search" placeholder="Поиск по 10 000 товарам" class="search__input">
-							<input type="submit" value="Найти" class="search__submit"> 
-							<div class="select_search">
-								<select>
-									<option value="1">Во всех разделах</option>
-									<option value="2">2</option>
-									<option value="3">3</option>
-									<option value="4">4</option>
-								</select>
-							</div>
+				<div class="head_block_2 inside_block">
+					<div class="main_logo">
+						<img src="img/main_logo.png" alt="">
+					</div>
+					<div class="left_menu_button"></div>
+					<div class="search_block">
+						<div class="search_cont">
+							<form action="" class="head_search_form">
+								<input type="search" placeholder="Поиск по 10 000 товарам" class="search__input">
+								<input type="submit" value="Найти" class="search__submit"> 
+								<div class="select_search">
+									<select>
+										<option value="1">Во всех разделах</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+									</select>
+								</div>
 
-						</form>
+							</form>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="head_block_botm">
-				<div class="head_block_3 inside_block">
-					<button class="sale_btn">Продать вещь</button>
-					<ul class="my_panel">
-						<li><a href="">135</a></li>
-						<li class="my_msg"><a href=""><span>2</span></a></li>
-						<li><a href="">Мои лоты</a></li>
-						<li><a href="">Ставки</a></li>
-						<li><a href="">Сделки</a></li>
-					</ul>
-				</div>
-			</div>	
-		</header>
-		<!-- header -->
-		<div class="content" >
-
-			
-
-
+				<div class="head_block_botm">
+					<div class="head_block_3 inside_block">
+						<button class="sale_btn">Продать вещь</button>
+						<ul class="my_panel">
+							<li><a href="">135</a></li>
+							<li class="my_msg"><a href=""><span>2</span></a></li>
+							<li><a href="">Мои лоты</a></li>
+							<li><a href="">Ставки</a></li>
+							<li><a href="">Сделки</a></li>
+						</ul>
+						<ul class="user_link">
+							<li class="user_avtr"><img src="img/avtr.png" alt=""></li>
+							<li class="user_name">Имя и фамилия пользователя</li>
+							<li class="round"><a href="">325</a></li>
+						</ul>
+					</div>
+				</div>	
+			</header>
+			<!-- header -->
 			<article class="main_content ">
+						<div class="categories_block inside_block">
+						<ul class="categ_list">
+							<li class="avto"><a href="">Авто, мото, водный транспорт</a></li>
+							<li class="appliances"><a href="">Бытовая техника</a></li>
+							<li class="sports"><a href="">Спортивные товары</a></li>
+							<li class="jewelry"><a href="">Ювелирные изделия, бижутерия, часы</a></li>
+							<li class="domestic"><a href="">Домашний быт</a></li>
+							<li class="clothes"><a href="">Одежда, обувь, галентерея </a></li>
+							<li class="else"><a href="">Ещё <br>категории</a></li>
+						</ul>
+					</div>
+					<div class="main_slider_block">
+						<div class="main_slider inside_block">
+							<div class="left_bl">
+								<h1>Аукцион —</h1>
+								<p class="au_descr">это удобный способ выгодно продавать и покупать разные вещи</p>
+								<button class="main_sale_btn">Продать вещь</button>
+							</div>
+							<div class="right_bl">
+								<h2>Скоро закрывающиеся</h2>
+								<ul id="main_slider" class="bxslider">
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+									<li>
+										<img src="img/m_slider/1.jpg" />
+										<p>Канада 5 центов 1968 Бобр</p>
+										<span><b>20</b>руб</span>
+										<div class="timer">
+											<h3>Осталось времени</h3>
+										</div>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="main_seacrh_block">
+						<div class="seacrh_block inside_block">
+							<h2>ПОИСК ТОВАРОВ</h2>
+							<form action="" class="main_block_search_form">
 
+								<label for="m_search_what">Что ищем?</label>
+								<label for="m_search_where">Где ищем?</label>
+								<label for="m_search_how_much">Почем?</label>
+								<input type="search" id="m_search_what" placeholder="Поиск по 10 000 товарам" class="m_search__input">
 
+								<input type="search" id="m_search_where" placeholder="Поиск по 10 000 товарам" class="m_search__input">
 
-			</article>
-		</div>
-		<!-- main_content -->
+								<input type="text" id="m_search_how_much" placeholder="от" class="m_search__input how_much">
+								<span>-</span>
+								<input type="text" placeholder="до" class="m_search__input how_much">
+								<input type="submit" value="Найти" class="m_search__submit"> 
+							</form>
+						</div> 
+					</div>
+					<div class="production_block">
+						<div class="prod_block inside_block">
+							<div class="tabs">
 
-		<footer class="footer">
-			<div class="main_foot">
+								<ul class="tabs__caption">
+									<li class="active">последние товары</li>
+									<li>популярные</li>
+									<li>рекомендуемые</li>
+								</ul>
 
-			</div>
-		</footer>
-	</div>
-	<div class="hidden">
+								<div class="tabs__content  active">
+									<ul class="tabs__content_list">
+										<li><img src="img/m_slider/2.jpg" alt="">
+											<p>Канада 5 центов 1968 Бобр</p>
+											<span><b>20</b>руб</span></li>
+											<li><img src="img/m_slider/2.jpg" alt="">
+												<p>Канада 5 центов 1968 Бобр</p>
+												<span><b>20</b>руб</span></li>
+												<li><img src="img/m_slider/2.jpg" alt="">
+													<p>Канада 5 центов 1968 Бобр</p>
+													<span><b>20</b>руб</span></li>
+													<li><img src="img/m_slider/2.jpg" alt="">
+														<p>Канада 5 центов 1968 Бобр</p>
+														<span><b>20</b>руб</span></li>
+													</ul>
+												</div>
 
-	</div>
+												<div class="tabs__content">
+
+												</div>
+
+												<div class="tabs__content">
+
+												</div>
+
+											</div><!-- .tabs -->
+										</div>
+									</div>
+									<div class="banner_block">
+										<div class="bnr_block inside_block" style="background:  url(img/banner.jpg) no-repeat 50%;">
+											<div class="bnr_descr">
+												<h2>Акции</h2>
+												<p>Баннера для акций клиентов</p>
+											</div>
+										</div>
+									</div>
+									<div class="banner_mnu_block">
+										<div class="bnr_mnu_block inside_block">
+											<ul class="mnu_list">
+												<li>Коллекционирование</li>
+												<li class="active">Ноутбуки</li>
+												<li>Коллекционирование</li>
+												<li>Ноутбуки</li>
+											</ul>
+										</div>
+									</div>
+									<div class="bottom_block">
+										<div class="btm_block inside_block">
+											<div class="btm_block_1">
+												<h3>Новости</h3>
+												<div class="news_1">
+													<h4>Кто может присутствовать на аукционе?</h4>
+													<div class="btm_block_date">10 ноября 2015</div>
+													<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iec psum dolor sit amet, consec quisquam alias adipr!</p>
+												</div>
+												<div class="news_2">
+													<div class="news_img">
+														<img src="img/news.jpg" alt="">
+													</div>
+
+													<h4>Кто может присутствовать на аукционе?</h4>
+													<div class="btm_block_date">10 ноября 2015</div>
+													<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iuibur unde.</p>
+												</div>
+												<div class="news_1">
+													<h4>Кто может присутствовать на аукционе?</h4>
+													<div class="btm_block_date">10 ноября 2015</div>
+													<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iure commodi  adipr!</p>
+												</div>
+											</div>
+											<div class="btm_block_2">
+												<h3>Рейтинг продавцов</h3>
+												<ul class="btm_block_2_list">
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															Ночной дозор
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															Имя пользователя
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															artemyev.k.m
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															V0LF
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															Ночной дозор
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															Имя пользователя
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															artemyev.k.m
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															V0LF
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															Ночной дозор
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															Имя пользователя
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															artemyev.k.m
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															V0LF
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															Ночной дозор
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															Имя пользователя
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="green">
+															</span>
+															artemyev.k.m
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+													<li>
+														<a href="">
+															<span class="red">
+															</span>
+															V0LF
+															<span class="rate">325
+															</span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<div class="btm_block_3">
+												<h3>Отзывы</h3>
+												<div class="review_list">
+													<div class="review">
+														<div class="review_title">
+															Сделка не состоялась
+														</div>
+														<div class="review_nick">
+															GanGMaN</div>
+															<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
+																по лоту : <br>
+																<span class="rew_prod">Процессор i5 2500k</span></div>
+															</div>
+															<div class="review">
+																<div class="review_title">
+																	Сделка не состоялась
+																</div>
+																<div class="review_nick">
+																	GanGMaN</div>
+																	<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
+																		по лоту : <br>
+																		<span class="rew_prod">Процессор i5 2500k</span></div>
+																	</div>
+																	<div class="review">
+																		<div class="review_title">
+																			Сделка не состоялась
+																		</div>
+																		<div class="review_nick">
+																			GanGMaN</div>
+																			<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
+																				по лоту : <br>
+																				<span class="rew_prod">Процессор i5 2500k</span></div>
+																			</div>
+																			<div class="review">
+																				<div class="review_title">
+																					Сделка не состоялась
+																				</div>
+																				<div class="review_nick">
+																					GanGMaN</div>
+																					<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
+																						по лоту : <br>
+																						<span class="rew_prod">Процессор i5 2500k</span></div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div class="work_process_block">
+																	<div class="wrk_block inside_block">
+																	<ul class="wrk_list">
+																	<li>
+																	<img src="img/wrk/1.png" alt="">
+																	<p>Найди лот в своём городе</p>
+																	</li>
+																	<li>
+																	<img src="img/wrk/2.png" alt="">
+																	<p>Свяжись с продавцом,  задай вопросы, обсуди условия передачи лота</p>
+																	</li>
+																	<li>
+																	<img src="img/wrk/3.png" alt="">
+																	<p>Соверши сделку</p>
+																	</li>
+																	<li>
+																	<img src="img/wrk/4.png" alt="">
+																	<p>Оставь отзыв о продавце</p>
+																	</li>
+																	</ul>
+																	<p class="notice">Все расчеты между продавцом и покупателем осуществляются без участия аукциона</p>
+																	</div>
+																	</div>			
+																</article>
+															</div>
+															<!-- main_content -->
+
+															<footer class="footer">
+																<div class="main_foot inside_block">
+
+																</div>
+															</footer>
+														</div>
+														<div class="hidden">
+
+														</div>
 	<!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
 	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
@@ -112,9 +501,13 @@
 	<script type="text/javascript"> 	
 		$(document).ready(function(){
 
-			$('#proj_slider').bxSlider({
+			$('#main_slider').bxSlider({
 				mode: 'horizontal',
-				captions: true,
+				minSlides: 4,
+				maxSlides: 4,
+				slideWidth: 177,
+				slideMargin: 5,
+				captions: false,
 				controls: true,
 				pager: false,
 				auto: false,
