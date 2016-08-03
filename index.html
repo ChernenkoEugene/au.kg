@@ -5,6 +5,7 @@
 <!--[if gt IE 8]><!-->
 <html lang="ru">
 <!--<![endif]-->
+
 <head>
 	<meta charset="utf-8" />
 	<title>Au.kg</title>
@@ -15,9 +16,10 @@
 	<link rel="stylesheet" href="css/fonts.css" />
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/responsive.css" />
-	<!-- <link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" /> -->
+	<link rel="stylesheet" href="css/MobileMenu.css" />
 	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 </head>
+
 <body>
 	<div class="wrapper">
 		<div class="content">
@@ -33,6 +35,11 @@
 						</ul>
 					</div>
 					<ul class="top_menu">
+						<li>
+							<a href="index.html" class="menu_logo mnuclose">
+								<div class="" style="background: url(img/menu_logo.png) no-repeat 50%"></div>
+							</a>
+						</li>
 						<li><a href="">Аукцион</a></li>
 						<li><a href="">Тендеры</a></li>
 						<li><a href="">Форум</a></li>
@@ -40,16 +47,43 @@
 						<li><a href="">Блог</a></li>
 					</ul>
 				</div>
-				<div class="head_block_2 inside_block">
-					<div class="main_logo">
-						<img src="img/main_logo.png" alt="">
+				<div class="head_block_2 inside_block cf">
+					<div class="navigation">
+						<nav>
+							<a href="javascript:void(0)" class="left_menu_button smobitrigger"></a>
+							<ul class="mobimenu">
+								<!-- <div class="mnuclose right_btn"><div class="btn_cls"></div>	<img src="img/main_logo.png" alt=""></div> -->
+								<li><a href="">Главная</a></li>
+								<li><a href="">Аукцион</a></li>
+								<li><a href="">Тендеры</a></li>
+								<li><a href="">Форум</a></li>
+								<li><a href="">Помощь</a></li>
+								<li><a href="">Блог</a></li>
+								<span class="mobimenu_botm_link">Аукцион<a href="">Россия</a></span>
+							</ul>
+						</nav>
 					</div>
-					<div class="left_menu_button"></div>
+					<a href="index.html" class="main_logo">
+						<img src="img/main_logo.png" alt="">
+					</a>
+					<div class="mobile_icons">
+						<ul>
+							<li class="icon_plus">
+								<a href=""><img src="img/icon_plus.png" alt=""></a>
+							</li>
+							<li class="icon_search">
+								<a ><img src="img/icon_search.png" alt=""></a>
+							</li>
+							<li class="icon_man">
+								<a ><img src="img/icon_man.png" alt=""></a>
+							</li>
+						</ul>
+					</div>
 					<div class="search_block">
 						<div class="search_cont">
 							<form action="" class="head_search_form">
 								<input type="search" placeholder="Поиск по 10 000 товарам" class="search__input">
-								<input type="submit" value="Найти" class="search__submit"> 
+								<input type="submit" value="Найти" class="search__submit">
 								<div class="select_search">
 									<select>
 										<option value="1">Во всех разделах</option>
@@ -58,7 +92,6 @@
 										<option value="4">4</option>
 									</select>
 								</div>
-
 							</form>
 						</div>
 					</div>
@@ -67,11 +100,11 @@
 					<div class="head_block_3 inside_block">
 						<button class="sale_btn">Продать вещь</button>
 						<ul class="my_panel">
-							<li><a href="">135</a></li>
-							<li class="my_msg"><a href=""><span>2</span></a></li>
-							<li><a href="">Мои лоты</a></li>
-							<li><a href="">Ставки</a></li>
-							<li><a href="">Сделки</a></li>
+							<li class="star"><a href=""><span class="name">Избранное</span><span class="value">135</span></a></li>
+							<li class="my_msg"><a href=""><span class="name">Мои сообщения</span><span class="value">2</span></a></li>
+							<li class="lots"><a href="">Мои лоты<span class="value">135</span></a></li>
+							<li class="bets"><a href="">Ставки<span class="value">135</span></a></li>
+							<li class="deals"><a href="">Сделки</a></li>
 						</ul>
 						<ul class="user_link">
 							<li class="user_avtr"><img src="img/avtr.png" alt=""></li>
@@ -79,7 +112,7 @@
 							<li class="round"><a href="">325</a></li>
 						</ul>
 					</div>
-				</div>	
+				</div>
 			</header>
 			<!-- header -->
 			<article class="main_content ">
@@ -110,6 +143,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv1" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -118,6 +165,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv2" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -126,6 +187,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv3" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -134,6 +209,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv4" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -142,6 +231,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv5" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 								<li>
@@ -150,6 +253,20 @@
 									<span><b>20</b>руб</span>
 									<div class="timer">
 										<h3>Осталось времени</h3>
+										<div id="clockdiv6" class="clockdiv">
+											<div>
+												<span class="hours"></span>
+												<div class="smalltext">часов</div>
+											</div>
+											<div>
+												<span class="minutes"></span>
+												<div class="smalltext">минут</div>
+											</div>
+											<div>
+												<span class="seconds"></span>
+												<div class="smalltext">секунд</div>
+											</div>
+										</div>
 									</div>
 								</li>
 							</ul>
@@ -160,31 +277,26 @@
 					<div class="seacrh_block inside_block">
 						<h2>ПОИСК ТОВАРОВ</h2>
 						<form action="" class="main_block_search_form">
-
 							<label for="m_search_what">Что ищем?</label>
-							<label for="m_search_where">Где ищем?</label>
-							<label for="m_search_how_much">Почем?</label>
+							<label for="m_search_where"  class="label_where">Где ищем?</label>
+							<label for="m_search_how_much" class="label_howm">Почем?</label>
 							<input type="search" id="m_search_what" placeholder="Поиск по 10 000 товарам" class="m_search__input">
-
 							<input type="search" id="m_search_where" placeholder="Поиск по 10 000 товарам" class="m_search__input">
-
-							<input type="text" id="m_search_how_much" placeholder="от" class="m_search__input how_much">
+							<input type="text" id="m_search_how_much" placeholder="от" class="m_search__input how_much start">
 							<span>-</span>
 							<input type="text" placeholder="до" class="m_search__input how_much">
-							<input type="submit" value="Найти" class="m_search__submit"> 
+							<input type="submit" value="Найти" class="m_search__submit">
 						</form>
-					</div> 
+					</div>
 				</div>
 				<div class="production_block">
 					<div class="prod_block inside_block">
 						<div class="tabs">
-
 							<ul class="tabs__caption">
 								<li class="active">последние товары</li>
 								<li>популярные</li>
 								<li>рекомендуемые</li>
 							</ul>
-
 							<div class="tabs__content  active">
 								<ul class="tabs__content_list">
 									<li><img src="img/m_slider/2.jpg" alt="">
@@ -201,16 +313,12 @@
 													<span><b>20</b>руб</span></li>
 												</ul>
 											</div>
-
 											<div class="tabs__content">
-
 											</div>
-
 											<div class="tabs__content">
-
 											</div>
-
-										</div><!-- .tabs -->
+										</div>
+										<!-- .tabs -->
 									</div>
 								</div>
 								<div class="banner_block">
@@ -244,7 +352,6 @@
 												<div class="news_img">
 													<img src="img/news.jpg" alt="">
 												</div>
-
 												<h4>Кто может присутствовать на аукционе?</h4>
 												<div class="btm_block_date">10 ноября 2015</div>
 												<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iuibur unde.</p>
@@ -252,7 +359,7 @@
 											<div class="news_1">
 												<h4>Кто может присутствовать на аукционе?</h4>
 												<div class="btm_block_date">10 ноября 2015</div>
-												<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iure commodi  adipr!</p>
+												<p class="btm_block_text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum dolores illo iure commodi adipr!</p>
 											</div>
 										</div>
 										<div class="btm_block_2">
@@ -261,8 +368,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														Ночной дозор
+														</span> Ночной дозор
 														<span class="rate">325
 														</span>
 													</a>
@@ -270,8 +376,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														Имя пользователя
+														</span> Имя пользователя
 														<span class="rate">325
 														</span>
 													</a>
@@ -279,8 +384,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														artemyev.k.m
+														</span> artemyev.k.m
 														<span class="rate">325
 														</span>
 													</a>
@@ -288,8 +392,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														V0LF
+														</span> V0LF
 														<span class="rate">325
 														</span>
 													</a>
@@ -297,8 +400,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														Ночной дозор
+														</span> Ночной дозор
 														<span class="rate">325
 														</span>
 													</a>
@@ -306,8 +408,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														Имя пользователя
+														</span> Имя пользователя
 														<span class="rate">325
 														</span>
 													</a>
@@ -315,8 +416,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														artemyev.k.m
+														</span> artemyev.k.m
 														<span class="rate">325
 														</span>
 													</a>
@@ -324,8 +424,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														V0LF
+														</span> V0LF
 														<span class="rate">325
 														</span>
 													</a>
@@ -333,8 +432,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														Ночной дозор
+														</span> Ночной дозор
 														<span class="rate">325
 														</span>
 													</a>
@@ -342,8 +440,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														Имя пользователя
+														</span> Имя пользователя
 														<span class="rate">325
 														</span>
 													</a>
@@ -351,8 +448,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														artemyev.k.m
+														</span> artemyev.k.m
 														<span class="rate">325
 														</span>
 													</a>
@@ -360,8 +456,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														V0LF
+														</span> V0LF
 														<span class="rate">325
 														</span>
 													</a>
@@ -369,8 +464,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														Ночной дозор
+														</span> Ночной дозор
 														<span class="rate">325
 														</span>
 													</a>
@@ -378,8 +472,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														Имя пользователя
+														</span> Имя пользователя
 														<span class="rate">325
 														</span>
 													</a>
@@ -387,8 +480,7 @@
 												<li>
 													<a href="">
 														<span class="green">
-														</span>
-														artemyev.k.m
+														</span> artemyev.k.m
 														<span class="rate">325
 														</span>
 													</a>
@@ -396,8 +488,7 @@
 												<li>
 													<a href="">
 														<span class="red">
-														</span>
-														V0LF
+														</span> V0LF
 														<span class="rate">325
 														</span>
 													</a>
@@ -409,112 +500,121 @@
 											<div class="review_list">
 												<div class="review">
 													<div class="review_title">
-														Сделка не состоялась
+														<img src="img/like.png" alt=""> Сделка не состоялась
 													</div>
 													<div class="review_nick">
-														GanGMaN</div>
-														<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
-															по лоту : <br>
+														GanGMaN
+														<span class="rate">325<i>покупатель</i>
+														</span>
+													</a>
+												</div>
+												<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span> по лоту :
+													<br>
+													<span class="rew_prod">Процессор i5 2500k</span></div>
+												</div>
+												<div class="review">
+													<div class="review_title">
+														<img src="img/like.png" alt=""> Сделка не состоялась
+													</div>
+													<div class="review_nick">
+														GanGMaN
+														<span class="rate">325<i>покупатель</i>
+														</span></div>
+														<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span> по лоту :
+															<br>
 															<span class="rew_prod">Процессор i5 2500k</span></div>
 														</div>
 														<div class="review">
 															<div class="review_title">
-																Сделка не состоялась
+																<img src="img/like.png" alt=""> Сделка не состоялась
 															</div>
 															<div class="review_nick">
-																GanGMaN</div>
-																<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
-																	по лоту : <br>
+																GanGMaN
+																<span class="rate">325<i>покупатель</i>
+																</span></div>
+																<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span> по лоту :
+																	<br>
 																	<span class="rew_prod">Процессор i5 2500k</span></div>
 																</div>
 																<div class="review">
 																	<div class="review_title">
-																		Сделка не состоялась
+																		<img src="img/like.png" alt=""> Сделка не состоялась
 																	</div>
 																	<div class="review_nick">
-																		GanGMaN</div>
-																		<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
-																			по лоту : <br>
+																		GanGMaN
+																		<span class="rate">325<i>покупатель</i>
+																		</span></div>
+																		<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span> по лоту :
+																			<br>
 																			<span class="rew_prod">Процессор i5 2500k</span></div>
-																		</div>
-																		<div class="review">
-																			<div class="review_title">
-																				Сделка не состоялась
-																			</div>
-																			<div class="review_nick">
-																				GanGMaN</div>
-																				<div class="review_info">от&nbsp;<span class="rew_date">03.01.2016 20:06:03</span>
-																					по лоту : <br>
-																					<span class="rew_prod">Процессор i5 2500k</span></div>
-																				</div>
-																			</div>
 																		</div>
 																	</div>
 																</div>
-																<div class="work_process_block">
-																	<div class="wrk_block inside_block">
-																		<ul class="wrk_list">
-																			<li>
-																				<img src="img/wrk/1.png" alt="">
-																				<p>Найди лот в своём городе</p>
-																			</li>
-																			<li>
-																				<img src="img/wrk/2.png" alt="">
-																				<p>Свяжись с продавцом,  задай вопросы, обсуди условия передачи лота</p>
-																			</li>
-																			<li>
-																				<img src="img/wrk/3.png" alt="">
-																				<p>Соверши сделку</p>
-																			</li>
-																			<li>
-																				<img src="img/wrk/4.png" alt="">
-																				<p>Оставь отзыв о продавце</p>
-																			</li>
-																		</ul>
-																		<p class="notice">Все расчеты между продавцом и покупателем осуществляются без участия аукциона</p>
-																	</div>
-																</div>			
-															</article>
-														</div>
-														<!-- main_content -->
-
-														<footer class="footer">
-															<div class="main_foot inside_block">
-																<ul class="foot_list">
-																	<li>О проекте</li>
-																	<li>Наши вакансии</li>
-																	<li>Блог компании</li>
-																	<li>Помощь</li>
-																	<li>Как купить</li>
-																	<li>Как продать</li>
-																	<li>Увеличить продажи</li>
-																	<li>Импорт лотов</li>
-																	<li>Как заплатить за товар</li>
-																	<li>Отзывы и рейтинг</li>
-																	<li>Реклама на сайте</li>
-																	<li>Баннеры на аукционе</li>
-																	<li>Рекламные объявления</li>
-																	<li>PRO-аккаунт</li>
-																</ul>
 															</div>
-														</footer>
+														</div>
+														<div class="work_process_block">
+															<div class="wrk_block inside_block">
+																<ul class="wrk_list">
+																	<li>
+																		<img src="img/wrk/1.png" alt="">
+																		<p>Найди лот в своём городе</p>
+																	</li>
+																	<li>
+																		<img src="img/wrk/2.png" alt="">
+																		<p>Свяжись с продавцом, задай вопросы, обсуди условия передачи лота</p>
+																	</li>
+																	<li>
+																		<img src="img/wrk/3.png" alt="">
+																		<p>Соверши сделку</p>
+																	</li>
+																	<li>
+																		<img src="img/wrk/4.png" alt="">
+																		<p>Оставь отзыв о продавце</p>
+																	</li>
+																</ul>
+																<p class="notice">Все расчеты между продавцом и покупателем осуществляются без участия аукциона</p>
+															</div>
+														</div>
+													</article>
+												</div>
+												<!-- main_content -->
+												<footer class="footer">
+													<div class="main_foot inside_block">
+														<ul class="foot_list">
+															<li>О проекте</li>
+															<li>Наши вакансии</li>
+															<li>Блог компании</li>
+															<li>Помощь</li>
+															<li>Как купить</li>
+															<li>Как продать</li>
+															<li>Увеличить продажи</li>
+															<li>Импорт лотов</li>
+															<li>Как заплатить за товар</li>
+															<li>Отзывы и рейтинг</li>
+															<li>Реклама на сайте</li>
+															<li>Баннеры на аукционе</li>
+															<li>Рекламные объявления</li>
+															<li>PRO-аккаунт</li>
+														</ul>
 													</div>
-													<div class="hidden">
-													</div>
-	<!--[if lt IE 9]>
+												</footer>
+											</div>
+											<div class="hidden">
+											</div>
+    <!--[if lt IE 9]>
 	<script src="libs/html5shiv/es5-shim.min.js"></script>
 	<script src="libs/html5shiv/html5shiv.min.js"></script>
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
-	<script   src="https://code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 	<script src="libs/bxslider/jquery.bxslider.min.js"></script>
 	<script src="js/common.js"></script>
 	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
-
-	<script type="text/javascript"> 	
-		$(document).ready(function(){
-
+	<script src="js/simpleMobileMenu.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.smobitrigger').smplmnu();
 			$('#main_slider').bxSlider({
 				mode: 'horizontal',
 				minSlides: 4,
@@ -524,11 +624,12 @@
 				captions: false,
 				controls: true,
 				pager: false,
-				auto: false,
-				speed: 1000
+				auto: true,
+				speed: 5000
 			});
 
 		});
 	</script>
 </body>
+
 </html>

@@ -324,6 +324,7 @@ a {
 
 .head_block_2 {
     height: 110px;
+    position: relative;
 }
 
 .main_logo {
@@ -332,28 +333,22 @@ a {
     margin-right: 25px;
 }
 
+.menu_logo {
+    width: 120px;
+    height: 50px;
+}
+
 .left_menu_button {
+    position: absolute;
+    top: 35px;
+    left: 144px;
     display: inline-block;
     width: 48px;
     height: 36px;
     border: 1px solid #899BAA;
     border-radius: 3px;
     margin-bottom: 10px;
-    position: relative;
     cursor: pointer;
-    transition: all 0.3s;
-}
-
-.left_menu_button:hover {
-    border: 1px solid #43627b;
-    transition: all 0.3s;
-}
-
-.left_menu_button:hover:before {
-    background: #43627b;
-    border-radius: 2px;
-    box-shadow: 0 5px 0 0 #43627b, 0 10px 0 0 #43627b;
-    transition: all 0.3s;
 }
 
 .left_menu_button:before {
@@ -366,7 +361,28 @@ a {
     background: #647CA2;
     border-radius: 2px;
     box-shadow: 0 5px 0 0 #647CA2, 0 10px 0 0 #647CA2;
-    transition: all 0.3s;
+}
+
+.left_menu_button:hover {
+    border: 1px solid #43627b;
+}
+
+.left_menu_button:hover:before {
+    background: #43627b;
+    border-radius: 2px;
+    box-shadow: 0 5px 0 0 #43627b, 0 10px 0 0 #43627b;
+}
+
+.left_menu_button.open:before {
+    content: "×";
+    width: 15px;
+    height: 15px;
+    box-shadow: none;
+    background: none;
+    color: #647CA2;
+    font-size: 30px;
+    left: 15px;
+    top: 1px;
 }
 
 .search_block {
@@ -544,6 +560,13 @@ a {
     line-height: 24px;
     text-align: center;
     background-color: #F53860;
+}
+
+.my_panel .bets .value,
+.my_panel .lots .value,
+.my_panel .my_msg .name,
+.my_panel .star .name {
+    display: none;
 }
 
 .my_panel li:nth-child(1):before {
@@ -819,6 +842,7 @@ a {
 
 .bx-wrapper .bx-controls-direction a {
     height: 64px;
+    z-index: 2;
 }
 
 .bxslider .timer {
@@ -832,6 +856,26 @@ a {
     font-size: 13px;
     margin-top: 5px;
     text-align: center;
+}
+
+.timer .clockdiv > div {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.timer .clockdiv > div >span {
+    padding-top: 6px;
+    padding-bottom: 9px;
+    padding-left: 7px;
+    background-color: #D7E8EF;
+    font-size: 18px;
+    color: #303030;
+    letter-spacing: 7px;
+    margin: 0;
+}
+
+.timer .clockdiv .smalltext {
+    font-size: 11px;
 }
 
 .main_seacrh_block {
@@ -900,6 +944,7 @@ a {
     margin-right: 0;
     transition: all 0.3s;
     padding: 0;
+    vertical-align: top;
 }
 
 .m_search__submit:hover {
@@ -930,7 +975,7 @@ a {
     display: inline-block;
     width: 200px;
     height: 44px;
-    line-height: 44px;
+    line-height: 42px;
     margin-right: 10px;
     color: #303030;
     font-size: 13px;
@@ -941,11 +986,23 @@ a {
     text-align: center;
     cursor: pointer;
     margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.prod_block .tabs__caption li:hover {
+    border: 1px solid #758a90;
+    transition: all 0.3s;
 }
 
 .prod_block .tabs__caption li.active {
     background-color: #647CA2;
     color: #fff;
+    transition: all 0.3s;
+}
+
+.prod_block .tabs__caption li.active:hover {
+    background-color: #486ca5;
+    transition: all 0.3s;
 }
 
 .prod_block .tabs__content ul li {
@@ -955,6 +1012,10 @@ a {
     background-color: #fff;
     margin-right: 11px;
     text-align: center;
+}
+
+.prod_block .tabs__content ul li img {
+    width: 100%;
 }
 
 .prod_block .tabs__content {
@@ -1034,6 +1095,24 @@ a {
     width: 24.5%;
     text-align: center;
     position: relative;
+    cursor: pointer;
+}
+
+.banner_mnu_block .mnu_list li:hover {
+    text-decoration: underline;
+}
+
+.banner_mnu_block .mnu_list .active:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 49%;
+    top: -10px;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 10px solid #fff;
 }
 
 .banner_mnu_block .mnu_list li:after {
@@ -1192,6 +1271,7 @@ span.red {
     font-size: 13px;
     color: #656565;
     margin-bottom: 7px;
+    line-height: 1.5;
 }
 
 .review_nick {
@@ -1205,6 +1285,14 @@ span.red {
     color: #303030;
     text-decoration: underline;
     line-height: 1.4;
+}
+
+.review_list .rate {
+    display: none;
+}
+
+.review_title img {
+    display: none;
 }
 
 .work_process_block {
@@ -1248,6 +1336,10 @@ span.red {
     margin-left: -250px;
 }
 
+.mobile_icons {
+    display: none;
+}
+
 
 /*=======================================footer======================================*/
 
@@ -1260,15 +1352,16 @@ span.red {
     height: 164px;
     padding-top: 30px;
 }
-.foot_list {
- 
-}
-   .foot_list li {
+
+.foot_list {}
+
+.foot_list li {
     width: 24.5%;
-     margin-bottom: 12px;
+    margin-bottom: 12px;
     float: left;
     display: inline;
     color: #627491;
-   } 
+}
+
 
 /*=======================================footer_____End======================================*/
