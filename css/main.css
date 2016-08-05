@@ -1365,3 +1365,93 @@ span.red {
 
 
 /*=======================================footer_____End======================================*/
+
+
+/*======= breadcrumbs=======*/
+
+.breadcrumbs {
+    height: 63px;
+    line-height: 63px;
+}
+
+.breadcrumbs li {
+    display: inline;
+    margin-right: 6px;
+    color: #6d6d6d;
+    font-size: 13px;
+}
+
+.breadcrumbs .prevCrumb:hover {
+    text-decoration: underline;
+}
+
+.breadcrumbs a {
+    color: #6d6d6d;
+    font-size: 13px;
+}
+
+
+/*======= breadcrumbs__End=======*/
+
+.left_aside {
+    display: inline-block;
+    width: 280px;
+    vertical-align: top;
+}
+
+.left_aside_header {
+    background-color: #516586;
+    color: #fff;
+    padding: 20px;
+}
+
+.left_aside_header h4 {
+    font-size: 18px;
+}
+
+.left_aside_header h4 span {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    font-size: 13px;
+    color: #7ba8f0;
+    margin-left: 28px;
+}
+
+.left_aside_header h4 span:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: -25px;
+    top: 50%;
+    margin-top: -12px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/sprite1.png) no-repeat -172px 50%;
+}
+
+.left_aside_header__location {
+    color: #80b0fc;
+    margin-top: 3px;
+}
+
+.left_aside_header__location img {
+    vertical-align: text-top;
+    margin-right: 7px;
+    margin-top: 3px;
+}
+
+.left_aside_header__personal {
+    color: #b1c5e5;
+    font-size: 12px;
+}
+
+.personal__img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+}
+
+.personal__img img {
+    width: 100%;
+}
