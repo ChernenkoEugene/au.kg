@@ -88,7 +88,12 @@ $(document).ready(function() {
 
 
 
-
+ $('.left_aside_menu_list .lvl1').on('click', function() {
+        $(this)
+            .children('ul').slideToggle(200);
+        $(this)
+            .toggleClass('open');
+    });
 
 
     //fancybox
