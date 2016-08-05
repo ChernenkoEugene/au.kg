@@ -1339,7 +1339,9 @@ span.red {
 .mobile_icons {
     display: none;
 }
-
+.mobile_icons.open {
+    display: none;
+}
 
 /*=======================================footer======================================*/
 
@@ -1393,6 +1395,10 @@ span.red {
 
 /*======= breadcrumbs__End=======*/
 
+.page_bg {
+    background-color: #E9ECED;
+}
+
 .left_aside {
     display: inline-block;
     width: 280px;
@@ -1444,6 +1450,7 @@ span.red {
 .left_aside_header__personal {
     color: #b1c5e5;
     font-size: 12px;
+    margin-top: 20px;
 }
 
 .personal__img {
@@ -1454,4 +1461,146 @@ span.red {
 
 .personal__img img {
     width: 100%;
+}
+
+.personal__info {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 8px;
+}
+
+.personal__info p {
+    margin-bottom: 8px;
+}
+
+.personal__info p:first-child {
+    margin-bottom: 5px;
+}
+
+.personal__info .personal_big {
+    font-size: 18px;
+    color: #fff;
+    margin-top: -5px;
+    margin-bottom: 7px;
+}
+
+.left_aside_menu {
+    padding-top: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 85px;
+    background-color: #fff;
+}
+
+.left_aside_menu_list > li {
+    border-bottom: 1px solid #D6DADC;
+    position: relative;
+}
+
+.left_aside_menu_list > li:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    margin-top: -2.5px;
+    width: 10px;
+    height: 5px;
+    background: url(../img/arrow_down_sm.png) no-repeat 50%;
+}
+
+.left_aside_menu_list > li:last-child {
+    border: none;
+}
+
+.left_aside_menu_list .lvl1 a {
+    height: 35px;
+    line-height: 35px;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+}
+
+.left_aside_menu_list .lvl1 img {
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-bottom: 3px;
+}
+
+.left_aside_menu_list li a {
+    display: block;
+    height: 100%;
+    color: #303030;
+}
+
+.left_aside_menu_lvl2 {
+    display: none;
+}
+
+.content_block {
+    display: inline-block;
+    width: 74.5%;
+    background-color: #fff;
+    margin-left: 20px;
+    padding-top: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.content_block h2 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "RobotoBold";
+    padding-bottom: 20px;
+    border-bottom: 1px solid #D6DADC;
+    margin-bottom: 25px;
+}
+
+.change_email_form label,
+.change_pass_form label  {
+    display: block;
+    text-align: left;
+    position: relative;
+    height: 35px;
+    line-height: 35px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.change_email_form label input,
+ .change_pass_form label input{
+    width: 320px;
+    height: 35px;
+    border: 1px solid #C9D2D9;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-left: 10px;
+}
+
+.change_email_form .change_email_form_submit,
+.change_pass_form .change_email_form_submit  {
+    width: 145px;
+    height: 40px;
+    background-color: #EF6729;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-family: "RobotoBold";
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.change_email_form .change_email_form_submit:hover,
+.change_pass_form .change_email_form_submit:hover {
+    background-color: #ef5429;
+    transition: all 0.3s;
+}
+
+.change_email_form .change_email_form_submit:active,
+.change_pass_form .change_email_form_submit:active {
+    transform: translate(0, 2px);
+    transition: all 0.3s;
 }

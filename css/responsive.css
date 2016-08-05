@@ -66,6 +66,13 @@
     .wrk_block .wrk_list li img {
         width: 80px;
     }
+    .content_block {
+        width: 69%;
+    }
+    .change_email_form label,
+    .change_pass_form label {
+        width: 80%;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -74,6 +81,13 @@
     }
     .right_bl .bxslider li {
         width: 177px !important;
+    }
+    .content_block {
+        width: 60%;
+    }
+    .change_email_form label,
+    .change_pass_form label {
+        width: 100%;
     }
 }
 
@@ -101,7 +115,7 @@
         padding-top: 25px;
         margin-top: 0;
     }
-        .search_block:before {
+    .search_block:before {
         content: "";
         display: block;
         position: absolute;
@@ -118,16 +132,16 @@
         display: block;
         height: 40px;
         width: 300px;
-           margin: 0 auto;
-    margin-bottom: 15px;
-    border: 1px solid #CCD4DB;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        border: 1px solid #CCD4DB;
     }
     .search__input {
-    	padding-left: 13px;
+        padding-left: 13px;
     }
     .head_search_form .search__submit {
-    	float: none;
-    	margin-top: 20px;
+        float: none;
+        margin-top: 20px;
     }
     .select_search:before {
         display: none;
@@ -361,6 +375,13 @@
     }
 }
 
+@media only screen and (max-width: 950px) {
+    .change_email_form label input,
+    .change_pass_form label input {
+        width: 240px;
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .right_bl {
         width: 359px;
@@ -404,6 +425,50 @@
         width: 25px;
         height: 25px;
         background: url(../img/sprite1.png) no-repeat -172px 50%;
+    }
+    .content_block {
+        margin-left: 15px;
+        width: 57%;
+    }
+    .change_email_form label input,
+    .change_pass_form label input {
+        width: 220px;
+    }
+    .change_email_form label,
+    .change_pass_form label {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .left_aside {
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .left_aside_menu {
+        margin-bottom: 15px;
+    }
+    .content_block {
+        display: block;
+        width: 320px;
+        margin: 0 auto;
+    }
+    .personal_cab {
+        padding-bottom: 20px;
+    }
+    .change_email_form label,
+    .change_pass_form label {
+    line-height: 10px;
+ 
+        height: initial;
+    }
+    .change_email_form label input,
+    .change_pass_form label input {
+        width: 100% ;
+        margin: 0 auto;
+        position: static;
+        margin-top: 5px;
     }
 }
 
@@ -456,16 +521,16 @@
     .content {
         padding-bottom: 375px;
     }
-   .navwrp .mobimenu {
+    .navwrp .mobimenu {
         width: 190px;
     }
     .left_menu_button.open {
-    left: 200px;
-}
-.main_logo.open {
-    margin-right: 0;
-    margin-left: 237px;
-}
+        left: 200px;
+    }
+    .main_logo.open {
+        margin-right: 0;
+        margin-left: 237px;
+    }
 }
 
 @media only screen and (max-width: 630px) {
@@ -499,6 +564,17 @@
     }
     .prod_block .tabs__content ul li img {
         width: 75%;
+    }
+    .breadcrumbs {
+        padding-left: 15px;
+        height: 63px;
+        line-height: 1.3;
+        padding-top: 15px;
+    }
+    .left_aside {}
+    .personal_cab.inside_block {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -563,8 +639,8 @@
         margin-left: 30px;
     }
     .main_logo.open {
-   display: none;
-}
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 420px) {
@@ -610,11 +686,11 @@
     }
     .head_block_3,
     .search_block {
-    	right: 5px;
+        right: 5px;
     }
-        .search_block {
-    	padding-left: 15px;
-    	padding-right: 15px;
+    .search_block {
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -676,20 +752,20 @@
         width: 80%;
     }
     .head_block_3 {
-    	width: 310px;
+        width: 310px;
     }
     .user_link,
     .my_panel li,
     .head_block_3 .sale_btn {
-    	margin-left: 5px;
+        margin-left: 5px;
     }
-.search_block:before {
-	right: 51px;
+    .search_block:before {
+        right: 51px;
+    }
+    .head_search_form input,
+    .select_search {
+        width: 280px;
+    }
 }
-.head_search_form input, .select_search {
-	width: 280px;
-}
-}
-
 
 @media only screen and (max-width: 320px) {}

@@ -40,7 +40,7 @@
            // $('.main_logo').css({
            //  'visibility': 'hidden'
            //  });
-           $('.mobile_icons').css({'display': 'none'});
+           $('.mobile_icons').addClass('open');
            $('.left_menu_button').addClass('open');
             $(".main_logo").addClass('open');
            
@@ -57,7 +57,7 @@
             // $('.main_logo, .left_menu_button').css({
             // 'visibility': 'visible'
             // });
-              $('.mobile_icons').css({'display': 'block'});
+              $('.mobile_icons').removeClass('open');
             $('.left_menu_button').removeClass('open');
             $(".main_logo").removeClass('open');
 		});
