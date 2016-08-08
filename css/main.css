@@ -1507,8 +1507,13 @@ span.red {
     width: 10px;
     height: 5px;
     background: url(../img/arrow_down_sm.png) no-repeat 50%;
+     transition: all 0.2s;
 }
-
+.left_aside_menu_list > li.open:after {
+    top: 15px;
+    transform: rotate(-180deg);
+    transition: all 0.2s;
+}
 .left_aside_menu_list > li:last-child {
     border: none;
 }
@@ -1520,7 +1525,13 @@ span.red {
     text-transform: uppercase;
     font-family: "RobotoBold";
 }
-
+.left_aside_menu_list .left_aside_menu_lvl2 a {
+    font-size: 12px;
+    text-transform: none;
+    padding-left: 28px;
+    height: 30px;
+    line-height: 30px;
+}
 .left_aside_menu_list .lvl1 img {
     vertical-align: middle;
     margin-right: 8px;
@@ -1535,6 +1546,7 @@ span.red {
 
 .left_aside_menu_lvl2 {
     display: none;
+    padding-bottom: 7px;
 }
 
 .content_block {
