@@ -117,34 +117,107 @@
 			<!-- header -->
 			<article class="main_content ">
 				<div class="page_bg">
-					<div class="enter_page inside_block">
-						<div class="enter_page_content">
-							<h1>Авторизуйтесь, пожалуйста, <br>чтобы создавать лоты, тендеры или объявления</h1>
-							<form action="" class="enter_page_form">
-								<label>E-mail или логин
-									<input type="text" class="email_login_input"  required>
-								</label>
-								<label>Пароль
-									<input type="password" class="password_input"  required>
-								</label>
-								<input type="submit" class="enter_page_form_submit" value="Войти">
-								<div class="enter_form_soc_block">
-								<h4>Вход через соц.сети</h4>
-								<ul class="enter_page_form_soc">
-								<li class="soc_vk"><img src="img/social/vk.png" alt=""></li>
-								<li class="soc_fb"><img src="img/social/fb.png" alt=""></li>
-								<li class="soc_gg"><img src="img/social/gg.png" alt=""></li>
-								<li class="soc_od"><img src="img/social/od.png" alt=""></li>
-								</ul>
+					<div class="personal_cab inside_block">
+						<div class="breadcrumbs">
+							<ul>
+								<li><a class="prevCrumb" href="index.html">Главная</a></li>
+								<li><img src="img/green_arw.png" alt=""></li>
+								<li><a class="prevCrumb" href="index.html">Пользователи</a></li>
+								<li><img src="img/green_arw.png" alt=""></li>
+								<li class="currentCrumb">Пользователь <span> Instrument2485 </span></li>
+							</ul>
+						</div>
+						<aside class="left_aside">
+							<div class="left_aside_header">
+								<h4>Instrument2485 <span>235</span></h4>
+								<p class="left_aside_header__location"><img src="img/gps.png" alt="">Красноярск</p>
+								<div class="left_aside_header__personal">
+									<div class="personal__img"><img src="img/avatar.jpg" alt=""></div>
+									<div class="personal__info">
+										<p>Зарегистрирован:</p>
+										<p>09.02.2016 21:38:27</p>
+										<p>Баланс:</p>
+										<p class="personal_big">0,00 руб.</p>
+										<p>Рейтинг:</p>
+										<p class="personal_big">0,00</p>
+									</div>
 								</div>
-							</form>
-							<div class="enter_page_register"> 
-							<h2>Впервые на сайте?</h2>
-							<p>Зарегистрируйтесь<br> и начните торговать прямо сейчас!</p>
-							<button class="button_register">Регистрация</button>
+							</div>
+							<div class="left_aside_menu">
+								<ul class="left_aside_menu_list">
+									<li class="lvl1"><a > <img src="img/config.png" alt="">Настройки</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/like1.png" alt="">Мои отзывы</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/like2.png" alt="">Отзывы обо мне</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/hammer.png" alt="">Участие на аукционе</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/mail_sm.png" alt="">Сообщения</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/star.png" alt="">Избранные</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+									<li class="lvl1"><a > <img src="img/black.png" alt="">Черный список</a>	
+										<ul class="left_aside_menu_lvl2">
+											<li><a href="">Личные данные</a></li>
+											<li><a href="">Личные данные</a></li>
+										</ul>
+									</li>
+								</ul>
+							</div>	
+						</aside>
+						<div class="content_block">
+							<h2>Личные данные</h2>
+							<div class="personal_details">
+
+
+								<form class="personal_details_form" enctype="multipart/form-data"  action="" method="post">
+									<h3>Аватар или фото</h3>
+									<div class="personal_avatar"><img src="img/personal_avatar.png" alt="" >
+									</div>
+									<input type="reset" class="personal_reset" value="Удалить">
+
+									<input type="file" class="input_hide inputfile" id="upload" data-multiple-caption="{count} files selected" multiple />
+									<label for="upload"><span>Загрузить</span></label>
+									<p class="personal_details_text">Размер файла не должен превышать 4 Мб. Если изображение больше 120х120 пикселей, то картинка будет уменьшена без сохранения анимации</p>
+									<h3>Подпись на форуме</h3>
+									<textarea rows="8" class="personal_text_input"  name="personal_text_input"></textarea>
+									<p class="personal_text_descr">Текст подписи будет отображаться под каждым Вашим сообщением на форуме</p>
+									<input type="submit" class="personal_submit" value="Сохранить">					
+
+								</div>
 							</div>
 						</div>
 					</div>
+
 				</article>
 			</div>
 			<!-- main_content -->

@@ -73,6 +73,24 @@
     .change_pass_form label {
         width: 80%;
     }
+    .pro_acc_types li {
+        width: 30%;
+    }
+    .balance_history_th .col_1,
+    .balance_history_tr .col_1 {
+        width: 25%;
+    }
+    .balance_history_th .col_2,
+    .balance_history_tr .col_2 {
+        width: 48%;
+    }
+    .balance_history_th .col_3,
+    .balance_history_tr .col_3 {
+        width: 25%;
+    }
+    .lot_item_price {
+        margin-left: 8%;
+    }
 }
 
 @media only screen and (max-width: 1080px) {
@@ -88,6 +106,15 @@
     .change_email_form label,
     .change_pass_form label {
         width: 100%;
+    }
+    .lot_item_price {
+        margin-left: 2%;
+    }
+    .lot_item_text .barg {
+        margin-left: 7px;
+    }
+    .lot_item_text {
+        margin-left: 5px;
     }
 }
 
@@ -373,6 +400,58 @@
         display: inline-block;
         margin-left: 3px;
     }
+    .pro_acc_types li {
+        width: 31%;
+    }
+    .pro_acc .pro_acc_text {
+        width: 100%;
+    }
+    .pro_acc h3 {
+        text-align: center;
+    }
+    .balance_history_th .col_1,
+    .balance_history_tr .col_1 {
+        width: 28%;
+    }
+    .balance_history_th .col_2,
+    .balance_history_tr .col_2 {
+        width: 45%;
+    }
+    .balance_history_th .col_3,
+    .balance_history_tr .col_3 {
+        width: 25%;
+    }
+    .balance_history_th {
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .balance_history_tr {
+        padding-left: 5px;
+        padding-right: 0px;
+    }
+    .balance_history_tr .col_3 {
+        font-size: 14px;
+    }
+    .balance_history_tr .col_1,
+    .balance_history_tr .col_2 {
+        font-size: 11px;
+    }
+    .lot_item_price {
+        margin-left: 2%;
+    }
+    .lot_item_text .barg {
+        display: block;
+        margin-left: 0px;
+    }
+    .lot_item_text {
+        width: 50%;
+    }
+    .lot_item_bcrumbs {
+        line-height: 1.3;
+    }
+    .lot_item_text .barg {
+        line-height: 1.6;
+    }
 }
 
 @media only screen and (max-width: 950px) {
@@ -380,6 +459,32 @@
     .change_pass_form label input {
         width: 240px;
     }
+    .pro_acc_types li {
+        display: block;
+        width: 220px;
+        margin-bottom: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .pers_cabt_item_right {
+        margin-left: 2%;
+        font-size: 11px;
+        max-width: 48%;
+    }
+    .pers_cabt_item_left {
+        font-size: 12px;
+    }
+    .pers_cabt_review {
+    font-size: 11px;
+  
+}
+.pers_cabt_item_bottom {
+    font-size: 11px;
+}
+.pers_cabt_item_left {
+    
+    width: 49%;
+}
 }
 
 @media only screen and (max-width: 900px) {
@@ -438,6 +543,32 @@
     .change_pass_form label {
         font-size: 12px;
     }
+    .enter_page {
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+    .enter_form_soc_block {
+        margin-bottom: 50px;
+    }
+    .pers_cabt_item_left {
+        display: block;
+        width: 100%;
+    }
+    .pers_cabt_item_right {
+        display: block;
+        width: 100%;
+        margin-left: 0;
+        max-width: initial;
+        margin-top: 15px;
+    }
+    .pers_cabt_item .nickname {
+        display: inline-block;
+        margin-bottom: 15px;
+    }
+    .refill_atten {
+   
+    line-height: 1.6;
+}
 }
 
 @media only screen and (max-width: 767px) {
@@ -459,17 +590,94 @@
     }
     .change_email_form label,
     .change_pass_form label {
-    line-height: 10px;
- 
+        line-height: 10px;
         height: initial;
     }
     .change_email_form label input,
     .change_pass_form label input {
-        width: 100% ;
+        width: 100%;
         margin: 0 auto;
         position: static;
         margin-top: 5px;
     }
+    .change_phone_form .password_input {
+        width: 100%;
+    }
+    .balance_history {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .balance_history_tr .col_1 {
+        padding-top: 12px;
+    }
+    .balance_history_tr .col_2 {
+        height: 20px;
+        margin-top: 5px;
+    }
+    .balance_history_tr .col_2:after {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+    }
+    .balance_history_tr .col_2 {
+        vertical-align: middle;
+    }
+    .balance_history_tr .col_1,
+    .balance_history_tr .col_2 {
+        font-size: 10px;
+    }
+    .balance_history_tr li {
+        vertical-align: top;
+        line-height: 1.4;
+    }
+    .balance_history_th .col_2,
+    .balance_history_tr .col_2 {
+        width: 40%;
+    }
+    .balance_history_th .col_1,
+    .balance_history_tr .col_1 {
+        width: 31%;
+    }
+    .personal_text_input {
+        width: 100%;
+    }
+    .lot_item_price {
+        margin-left: 0;
+        display: block;
+        text-align: center;
+        padding-left: 50px;
+    }
+    .lot_item_star_btn {
+        float: none;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 50px;
+    }
+    .lot_item_text {
+        width: 80%;
+        text-align: center;
+    }
+    .act_lot_item:last-child {
+    padding-bottom: 10px;
+}
+.refill_balance_form .refill_input {
+    width: 80%;
+}
+.refill_balance_form {
+    padding-bottom: 1px;
+}
+.all_my_rew_list .nickrate:before {
+    margin-left: 0;
+}
+.rew_list_left .nickname {
+    display: block;
+    margin-bottom: 5px;
+}
+.rew_list_date {
+    margin-top: 0;
+}
 }
 
 @media only screen and (max-width: 720px) {
@@ -765,6 +973,9 @@
     .head_search_form input,
     .select_search {
         width: 280px;
+    }
+    .enter_page_form {
+        width: 100%;
     }
 }
 

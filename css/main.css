@@ -424,11 +424,27 @@ a {
 .select_search {
     width: 250px;
     float: right;
-    background: #fff url(../img/arrow_down_md.png) no-repeat 95% 50%;
     background-size: 13px;
     position: relative;
 }
-
+.select_search:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+     background: url(../img/arrow_down_md.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    z-index: 0;
+    cursor: pointer;
+      transition: all 0.2s;
+}
+.select_search.open:after {
+    transform:rotate(-180deg);
+      transition: all 0.2s;
+}
 .select_search:before {
     content: "";
     display: block;
@@ -438,6 +454,7 @@ a {
     width: 1px;
     height: 28px;
     background-color: #D7DEE4;
+
 }
 
 .select_search select {
@@ -490,6 +507,7 @@ a {
 .sale_btn {
     width: 140px;
     height: 32px;
+    line-height: 32px;
     border: none;
     background-color: #EF6729;
     color: #fff;
@@ -1339,9 +1357,11 @@ span.red {
 .mobile_icons {
     display: none;
 }
+
 .mobile_icons.open {
     display: none;
 }
+
 
 /*=======================================footer======================================*/
 
@@ -1507,13 +1527,15 @@ span.red {
     width: 10px;
     height: 5px;
     background: url(../img/arrow_down_sm.png) no-repeat 50%;
-     transition: all 0.2s;
+    transition: all 0.2s;
 }
+
 .left_aside_menu_list > li.open:after {
     top: 15px;
     transform: rotate(-180deg);
     transition: all 0.2s;
 }
+
 .left_aside_menu_list > li:last-child {
     border: none;
 }
@@ -1525,6 +1547,7 @@ span.red {
     text-transform: uppercase;
     font-family: "RobotoBold";
 }
+
 .left_aside_menu_list .left_aside_menu_lvl2 a {
     font-size: 12px;
     text-transform: none;
@@ -1532,6 +1555,7 @@ span.red {
     height: 30px;
     line-height: 30px;
 }
+
 .left_aside_menu_list .lvl1 img {
     vertical-align: middle;
     margin-right: 8px;
@@ -1569,7 +1593,7 @@ span.red {
 }
 
 .change_email_form label,
-.change_pass_form label  {
+.change_pass_form label {
     display: block;
     text-align: left;
     position: relative;
@@ -1580,7 +1604,7 @@ span.red {
 }
 
 .change_email_form label input,
- .change_pass_form label input{
+.change_pass_form label input {
     width: 320px;
     height: 35px;
     border: 1px solid #C9D2D9;
@@ -1591,7 +1615,8 @@ span.red {
 }
 
 .change_email_form .change_email_form_submit,
-.change_pass_form .change_email_form_submit  {
+.change_pass_form .change_email_form_submit,
+.change_email_form_submit {
     width: 145px;
     height: 40px;
     background-color: #EF6729;
@@ -1605,14 +1630,899 @@ span.red {
     cursor: pointer;
     transition: all 0.3s;
 }
+
 .change_email_form .change_email_form_submit:hover,
-.change_pass_form .change_email_form_submit:hover {
+.change_pass_form .change_email_form_submit:hover,
+.change_email_form_submit:hover {
     background-color: #ef5429;
     transition: all 0.3s;
 }
 
 .change_email_form .change_email_form_submit:active,
-.change_pass_form .change_email_form_submit:active {
+.change_pass_form .change_email_form_submit:active,
+.change_email_form_submit:active {
     transform: translate(0, 2px);
     transition: all 0.3s;
+}
+
+
+/*enter_page*/
+
+.enter_page {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.enter_page h1 {
+    font-size: 16px;
+    line-height: 1.25;
+}
+
+.enter_page_content {
+    text-align: center;
+}
+
+.enter_page_form {
+    display: inline-block;
+    margin-top: 25px;
+    text-align: left;
+    width: 320px;
+}
+
+.enter_page_form label {
+    display: block;
+    width: 100%;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.enter_page_form .email_login_input,
+.enter_page_form .password_input {
+    display: block;
+    width: 100%;
+    height: 35px;
+    border: 1px solid #C9D2D9;
+    margin-top: 10px;
+}
+
+.enter_page_form .enter_page_form_submit {
+    display: block;
+    width: 145px;
+    height: 40px;
+    background-color: #EF6729;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-family: "RobotoBold";
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.enter_page_form .enter_page_form_submit:hover {
+    background-color: #ef5429;
+    transition: all 0.3s;
+}
+
+.enter_page_form .enter_page_form_submit:active {
+    transform: translate(0, 2px);
+    transition: all 0.3s;
+}
+
+.enter_form_soc_block {
+    width: 260px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.enter_form_soc_block h4 {
+    text-align: center;
+    font-size: 14px;
+}
+
+.enter_page_form_soc li {
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 15px;
+}
+
+.enter_page_register h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.enter_page_register {
+    margin-bottom: 50px;
+}
+
+.enter_page_register p {
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.enter_page_register .button_register {
+    display: block;
+    border: none;
+    width: 145px;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #647CA2;
+    color: #fff;
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.enter_page_register .button_register:hover {
+    background-color: #3665af;
+    transition: all 0.3s;
+}
+
+.enter_page_register .button_register:active {
+    transform: translate(0, 3px);
+}
+
+
+/*================================change_phone=============================*/
+
+.change_phone_form h5 {
+    font-size: 12px;
+}
+
+.change_phone_form label {
+    display: block;
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.change_phone_form .password_input {
+    display: block;
+    width: 340px;
+    height: 35px;
+    border: 1px solid #C9D2D9;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    padding-left: 10px;
+}
+
+.change_phone_descr {
+    font-size: 11px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+
+/*==============================pro_acc==============================*/
+
+.pro_acc {
+    margin-bottom: 25px;
+}
+
+.pro_acc h3 {
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.pro_acc .pro_acc_text {
+    width: 84%;
+    line-height: 1.2;
+}
+
+.pro_acc_types li {
+    display: inline-block;
+    width: 27%;
+    margin-right: 7px;
+    background-color: #E7EFFA;
+    border: 1px solid #516586;
+    text-align: center;
+}
+
+.pro_acc_types li h6 {
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 43px;
+    background-color: #516586;
+    margin-bottom: 45px;
+}
+
+.pro_acc_types li span {
+    font-size: 18px;
+}
+
+.pro_acc_types li span b {
+    font-family: "RobotoBold";
+    font-size: 36px;
+    color: #647ca2;
+}
+
+.pro_acc_order {
+    display: block;
+    width: 62%;
+    height: 40px;
+    background-color: #EF6729;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-size: 12px;
+    font-family: "RobotoBold";
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.pro_acc_order:hover {
+    background-color: #ef5429;
+    transition: all 0.3s;
+}
+
+.pro_acc_order:active {
+    transform: translate(0, 2px);
+    transition: all 0.3s;
+}
+
+
+/*   ================ balance_history================*/
+
+.balance_history {
+    margin-top: -15px;
+    margin-bottom: 25px;
+}
+
+.balance_history_th {
+    background-color: #647CA2;
+    font-size: 11px;
+    font-family: "RobotoBold";
+    text-transform: uppercase;
+    color: #fff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.balance_history_tr {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.balance_history_th li,
+.balance_history_tr li {
+    display: inline-block;
+    height: 37px;
+    line-height: 37px;
+}
+
+.balance_history_th .col_1,
+.balance_history_tr .col_1 {
+    width: 20%;
+}
+
+.balance_history_th .col_2,
+.balance_history_tr .col_2 {
+    width: 58%;
+}
+
+.balance_history_th .col_3,
+.balance_history_tr .col_3 {
+    width: 20%;
+}
+
+.balance_history_tr .col_1 {
+    font-family: "RobotoItalic";
+    font-size: 12px;
+    color: #868585;
+}
+
+.balance_history_tr .col_2 {
+    font-size: 12px;
+}
+
+.balance_history_tr .col_3 {
+    font-size: 18px;
+}
+
+.balance_history_tr:nth-child(odd) {
+    background-color: #EFF1F3;
+}
+
+
+/*=================personal_details=================*/
+
+.personal_details_form h3 {
+    font-size: 13px;
+    font-family: "RobotoBold";
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.personal_details_form .personal_avatar img {
+    width: 120px;
+}
+
+.personal_details_form .personal_reset {
+    display: block;
+    width: 120px;
+    height: 26px;
+    line-height: 26px;
+    border: none;
+    background-color: #647CA2;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.input_hide {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+label[for="upload"] {
+    display: block;
+    width: 120px;
+    height: 26px;
+    line-height: 26px;
+    border: none;
+    background-color: #647CA2;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+label[for="upload"]:hover,
+.personal_details_form .personal_reset:hover {
+    background-color: #3665af;
+    transition: all 0.3s;
+}
+
+label[for="upload"]:active,
+.personal_details_form .personal_reset:active {
+    transform: translate(0, 3px);
+}
+
+.personal_details_text {
+    width: 290px;
+    line-height: 1.4;
+    font-size: 10px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.personal_submit {
+    display: block;
+    width: 140px;
+    height: 40px;
+    background-color: #EF6729;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-size: 13px;
+    font-family: "RobotoBold";
+    text-align: center;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.personal_submit:hover {
+    background-color: #ef5429;
+    transition: all 0.3s;
+}
+
+.personal_submit:active {
+    transform: translate(0, 2px);
+    transition: all 0.3s;
+}
+
+.personal_text_input {
+    /* resize: none;*/
+    width: 340px;
+    overflow: hidden;
+    border: 1px solid #C9D2D9;
+    padding: 10px;
+}
+
+.personal_text_descr {
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.personal_details {
+    padding-bottom: 30px;
+}
+
+
+/*=======================act_lot=======================*/
+
+.lot_item__img {
+    display: inline-block;
+    vertical-align: top;
+    width: 45px;
+    padding-top: 5px;
+}
+
+.lot_item__img img {
+    width: 100%;
+}
+
+.lot_item_text {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 10px;
+    padding-top: 5px;
+}
+
+.lot_item_text h4 {
+    font-family: "RobotoBlack";
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 2px;
+}
+
+.lot_item_num {
+    font-size: 11px;
+}
+
+.lot_item_bcrumbs {
+    color: #647ca2;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    font-size: 11px;
+}
+
+.lot_item_bcrumbs a {
+    display: inline-block;
+    color: #647ca2;
+}
+
+.lot_item_bcrumbs a:hover {
+    color: #303030;
+    text-decoration: underline;
+}
+
+.lot_item_bcrumbs a:after {
+    display: inline-block;
+    content: "/";
+    margin-left: 3px;
+}
+
+.lot_item_text .lot_item_bcrumbs a:hover:after {
+    text-decoration: none;
+    color: #647ca2;
+}
+
+.lot_item_text .location {
+    display: inline-block;
+    color: #647ca2;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.lot_item_text .location img {
+    vertical-align: text-top;
+}
+
+.lot_item_text .barg {
+    display: inline-block;
+    color: #303030;
+    font-size: 12px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.lot_item_text .barg img {
+    vertical-align: sub;
+    margin-right: 3px;
+}
+
+.act_lot_item {
+    border-bottom: 1px solid #D6DADC;
+    margin-top: -20px;
+    margin-bottom: 25px;
+}
+
+.act_lot_item:last-child {
+    border: none;
+    margin-bottom: 0;
+}
+
+.lot_item_price {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "RobotoBlack";
+    margin-left: 15%;
+}
+
+.lot_item_price span b {
+    font-size: 24px;
+    color: #69ae7c;
+}
+
+.lot_item_star_btn {
+    display: block;
+    float: right;
+}
+
+.lot_item_star_btn img {
+    vertical-align: top;
+}
+
+
+/*====================pers_cabt====================*/
+
+.pers_cabt {
+    margin-top: -10px;
+}
+
+.pers_cabt_item {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #D6DADC;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.pers_cabt_item:last-child {
+    border: none;
+}
+
+.pers_cabt_item h4 {
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.pers_cabt_item .nickname {
+    text-transform: uppercase;
+}
+
+.pers_cabt_item .nickrate {
+    display: inline-block;
+    color: #647CA2;
+}
+
+.pers_cabt_item .nickrate:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-right: -3px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/sprite1.png) no-repeat -172px 50%;
+}
+
+.nickname_descr {
+    font-family: "RobotoItalic";
+    color: #737373;
+    padding-left: 3px;
+}
+
+.pers_cabt_item_left {
+    display: inline-block;
+    width: 45%;
+}
+
+.pers_cabt_review {
+    font-size: 13px;
+    line-height: 1.3;
+}
+
+.pers_cabt_review__img {
+    float: left;
+    clear: both;
+    margin-right: 7px;
+}
+
+.pers_cabt_item_right {
+    display: inline-block;
+    margin-left: 9%;
+    max-width: 45%;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.pers_cab_date_lot {
+    color: #647ca2;
+}
+
+.pers_cabt_item_bottom {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #D6DADC;
+    font-size: 13px;
+}
+
+.pers_cabt_item_bottom .pers_cab_date_from {
+    margin-bottom: 5px;
+    margin-top: 15px;
+}
+
+.pers_cabt {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 70px solid #E9ECED;
+}
+
+
+/*=====================refill balance=====================*/
+
+.refill_balance_form .refill_input {
+    display: inline-block;
+    width: 320px;
+    height: 35px;
+    border: 1px solid #C9D2D9;
+    padding-left: 15px;
+    margin-top: 13px;
+    margin-bottom: 25px;
+}
+
+.refill_atten {
+    font-size: 12px;
+}
+
+.refill_summ {
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.refill_method {
+    font-family: "RobotoBold";
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.refill_balance_form label span {
+    font-size: 13px;
+    margin-left: 5px;
+}
+
+
+/* radio*/
+
+.refill_balance_form input[type="radio"]:not(:checked),
+input[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+
+.refill_balance_form input[type="radio"]:not(:checked) + label,
+.refill_balance_form input[type="radio"]:checked + label {
+    position: relative;
+    padding-left: 22px;
+    cursor: pointer;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.refill_balance_form input[type="radio"]:not(:checked) + label:before,
+.refill_balance_form input[type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -5px;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: #EF6729;
+    margin-top: 3px;
+    transition: all 0.3s;
+}
+
+.refill_balance_form input[type="radio"]:not(:checked) + label:after,
+.refill_balance_form input[type="radio"]:checked + label:after {
+    content: '●';
+    position: absolute;
+    top: -1px;
+    left: 3px;
+    font-size: 16px;
+    line-height: 0.8;
+    color: #fff;
+    transition: all .2s;
+}
+
+.refill_balance_form input[type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+}
+
+.refill_balance_form input[type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.refill_balance_form input[type="radio"]:not(:checked) + label:hover:before,
+.refill_balance_form input[type="radio"]:checked + label:hover:before {
+    background-color: #d45218;
+}
+
+
+/*end radiobuttons*/
+
+.refill_form_submit {
+    display: block;
+    position: relative;
+    width: 145px;
+    height: 40px;
+    background: #EF6729 url(../img/refill_arw.png) no-repeat 89% 50%;
+    color: #fff;
+    text-transform: uppercase;
+    border: none;
+    font-family: "RobotoBold";
+    text-align: left;
+    padding-left: 25px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.refill_form_submit:hover {
+    background-color: #ef5429;
+    transition: all 0.3s;
+}
+
+.refill_form_submit:active {
+    transform: translate(0, 2px);
+    transition: all 0.3s;
+}
+
+
+/*=====================all_my_rew=====================*/
+
+.all_my_rew_list {
+    margin-top: -30px;
+}
+
+.all_my_rew_list li {
+    padding-top: 10px;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #D6DADC;
+}
+
+.all_my_rew_list li:last-child {
+    border-bottom: none;
+}
+
+.all_my_rew_list .nickrate {
+    display: inline-block;
+    color: #647CA2;
+}
+
+.all_my_rew_list .nickrate:before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 3px;
+    margin-left: 4px;
+    margin-right: -3px;
+    width: 25px;
+    height: 25px;
+    background: url(../img/sprite1.png) no-repeat -172px 50%;
+}
+
+.all_my_rew_list .nickname_descr {
+    font-size: 13px;
+}
+
+.rew_list_left {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+}
+
+.rew_list_right {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+    text-align: right;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.rew_list_date {
+    display: block;
+    text-align: left;
+    margin-bottom: 3px;
+    margin-top: 5px;
+    font-family: "RobotoItalic";
+    color: #737373;
+}
+
+.rew_list_lot {
+    display: block;
+    text-align: left;
+    color: #647ca2;
+}
+
+
+/*===========my_settings===========*/
+.my_settings h4 {
+    text-transform: uppercase;
+    font-size: 13px;
+        font-family: "RobotoBold";
+        margin-bottom: 15px;
+}
+.settings_city {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    line-height: 40px;
+    width: 340px;
+    background-size: 13px;
+    border: 1px solid #C9D2D9;
+    position: relative;
+}
+.settings_city:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 6px;
+     background: url(../img/arrow_down_md.png) no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+    z-index: 0;
+    cursor: pointer;
+      transition: all 0.2s;
+}
+.settings_city.open:after {
+    transform:rotate(-180deg);
+      transition: all 0.2s;
+}
+.settings_city select {
+    padding: 10px;
+    padding-left: 13px;
+    width: 100%;
+    border: none;
+    box-shadow: none;
+    font-size: 13px;
+    background-color: transparent;
+    background-image: none;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.settings_city select:focus {
+    outline: none;
+}
+.settings_city_notice {
+    font-size: 10px;
+    line-height: 1.5;
+    margin-top: 10px;
 }

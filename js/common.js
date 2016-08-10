@@ -88,14 +88,25 @@ $(document).ready(function() {
 
 
 
- $('.left_aside_menu_list .lvl1').on('click', function() {
+    $('.left_aside_menu_list .lvl1').on('click', function() {
         $(this)
             .children('ul').slideToggle(200);
         $(this)
             .toggleClass('open');
     });
 
+    // search
+    $('.select_search').on('click', function() {
 
+        $(this)
+            .toggleClass('open');
+    });
+     // my_city
+    $('.settings_city').on('click', function() {
+
+        $(this)
+            .toggleClass('open');
+    });
     //fancybox
     $(".fancybox").fancybox();
 
